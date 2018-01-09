@@ -1,0 +1,7 @@
+wget https://downloads.mariadb.com/Connectors/java/connector-java-1.5.6/mariadb-java-client-1.5.6.jar
+yum install mariadb telnet tree screen curl wget net-utils bind-utils git
+mysql
+CREATE DATABASE jbossdb;
+GRANT ALL privileges ON jbossdb.* TO jbossadm IDENTIFIED BY 'jbossadm';
+GRANT ALL PRIVILEGES ON jbossdb.* TO 'jbossadm'@'%' WITH GRANT OPTION;
+mysql -h 192.168.122.98 --user=jbossadm --password=jbossadm jbossdb
