@@ -43,14 +43,23 @@ public class HelloWorldMessaging extends HttpServlet {
     private static final Logger log = Logger.getLogger(HelloWorldMessaging.class.toString());
 
     // Set up all the default values
+//    private static final String DEFAULT_MESSAGE = "Hello, World!";
+//    private static final String DEFAULT_CONNECTION_FACTORY = "jms/RemoteConnectionFactory";
+//    private static final String DEFAULT_DESTINATION = "jms/queue/HELLOWORLDQueue";
+//    private static final String DEFAULT_MESSAGE_COUNT = "1";
+//    private static final String DEFAULT_USERNAME = "jmsadmin";
+//    private static final String DEFAULT_PASSWORD = "jmsadmin";
+//    private static final String INITIAL_CONTEXT_FACTORY = "org.wildfly.naming.client.WildFlyInitialContextFactory";
+//    private static final String PROVIDER_URL = "http-remoting://192.168.122.98:8080";
+
     private static final String DEFAULT_MESSAGE = "Hello, World!";
     private static final String DEFAULT_CONNECTION_FACTORY = "jms/RemoteConnectionFactory";
-    private static final String DEFAULT_DESTINATION = "jms/queue/HELLOWORLDQueue";
+    private static final String DEFAULT_DESTINATION = "jms/queue/test";
     private static final String DEFAULT_MESSAGE_COUNT = "1";
-    private static final String DEFAULT_USERNAME = "jmsadmin";
-    private static final String DEFAULT_PASSWORD = "jmsadmin";
+    private static final String DEFAULT_USERNAME = "quickstartUser";
+    private static final String DEFAULT_PASSWORD = "quickstartPwd1!";
     private static final String INITIAL_CONTEXT_FACTORY = "org.wildfly.naming.client.WildFlyInitialContextFactory";
-    private static final String PROVIDER_URL = "http-remoting://192.168.122.98:8080";
+    private static final String PROVIDER_URL = "http-remoting://127.0.0.1:8080";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
